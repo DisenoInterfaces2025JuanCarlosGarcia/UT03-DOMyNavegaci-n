@@ -4,7 +4,7 @@
 
 function Contenedor({children}) {
     return(
-        <div className="contenedor">{children}</div>
+        <div className="Contenedor">{children}</div>
     )
 
 }
