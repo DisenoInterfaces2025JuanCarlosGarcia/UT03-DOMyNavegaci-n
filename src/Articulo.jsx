@@ -13,11 +13,14 @@ return(
             
         </figure>
         <header className="card--body">
-            <h1>
+            <h1 className="text--h3">
                 <strong>{nombre}</strong>
-                </h1>
-            <h2>{precio} €</h2>
+            </h1>
             <p>{descripcion}</p>
+            <h2 className="text--h4">
+               <strong>Precio: {precio} €</strong>
+            </h2>
+
         </header>
     </article>
 );

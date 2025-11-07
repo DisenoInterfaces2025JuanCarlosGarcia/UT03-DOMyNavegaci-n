@@ -9,6 +9,7 @@ function App() {
       
       <Contenedor >
         <h1 className="text--h1">Catálogo de Artículos</h1>
+         <h2 className="text--h2" id="main-section-title">Listado de articulos disponibles</h2>
         
         <div className="grid--contenedor">
         {articulos.map((item, index) => (
