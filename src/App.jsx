@@ -5,14 +5,12 @@ import './index.css'
 
 function App() {
   return (
-    <main>
+    <main className="main--nav" aria-label="Catálogo de Artículos">
       
       <Contenedor >
-        <h1 className="contenedor_h1">Catálogo de Artículos</h1>
-        <p className="text_h2">
-        Listado de articulos disponibles:
-      </p>
-        <div className="grid-contenedor">
+        <h1 className="text--h1">Catálogo de Artículos</h1>
+        
+        <div className="grid--contenedor">
         {articulos.map((item, index) => (
           <Articulo
             key={index}
