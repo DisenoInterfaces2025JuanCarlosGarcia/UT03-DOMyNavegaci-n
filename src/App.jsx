@@ -1,29 +1,38 @@
 import articulos from "./data/articulos";
-import Articulo from "./Articulo";
-import Contenedor from "./Contenedor";
+import Articulo from "./components/Articulo";
+import Contenedor from "./components/Contenedor";
 import './index.css'
 
 function App() {
   return (
-    <main className="main--nav" aria-label="Catálogo de Artículos">
-      
-      <Contenedor >
-        <h1 className="text--h1">Catálogo de Artículos</h1>
-         <h2 className="text--h2" id="main-section-title">Listado de articulos disponibles</h2>
+    <>
+    <Header />
+    {/* <main id="main-content"> */}
+      <Routes>
+        <Route element={<Contenedor />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/inicio" element={<Navigate to="/" />} />
+          <Route path="/peliculas" element={<Peliculas />} />
+          <Route path="/interpretes" element={<Interpretes />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/interpretes/:idPelicula/:index" element={<InterpreteDetalle />} />
+          <Route path="/peliculas/:id" element={<PeliculasDetalle />} />
+        </Route>
+
+
+        <Route
+        path="*"
+        element={
+          <Contenedor titulo="Pagina no encontrada">
+            <p> La ruta no existe.</p>
+          </Contenedor>
         
-        <div className="grid--contenedor">
-        {articulos.map((item, index) => (
-          <Articulo
-            key={index}
-            nombre={item.nombre}
-            precio={item.precio}
-            descripcion={item.descripcion}
-            imagen={item.imagen}
-          />
-        ))}
-        </div>
-      </Contenedor>
-    </main>
+        }
+
+        />
+      </Routes>
+      {/* </main> */}
+    </>
   );
 }
 
