@@ -98,9 +98,9 @@ button:focus-visible {
 
 .text--h3{
     @extend .text-base;
-    font-size: clamp(1.2rem, 3vw, 1rem);
+    font-size: clamp(1.2rem, 3vw, 1.7rem);
     color: var(--color-black-1);
-    margin-bottom: 10%
+    margin-bottom: 5%
 }
 .text--h4{
     @extend .text-base;
