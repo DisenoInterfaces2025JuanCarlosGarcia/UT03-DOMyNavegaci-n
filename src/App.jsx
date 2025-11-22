@@ -8,7 +8,7 @@ import ArticuloDescripcion from "./pages/ArticuloDescripcion.jsx"
 import Home from "./pages/Home.jsx"
 import Catalogo from "./pages/Catalogo.jsx"
 import Header from "./components/Header.jsx"
-
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/inicio" element={<Inicio />} />
           <Route path="/catalogo" element={<Catalogo />} />
-          <Route path="/articulo/:id" element={<ArticuloDescripcion />} />
+          <Route path="/catalogo/:idArticulo" element={<ArticuloDescripcion />} />
         </Route>
         <Route
         path="*"
@@ -36,6 +36,7 @@ function App() {
         />
       </Routes>
       {/* </main> */}
+      <Footer />
     </>
   );
 }

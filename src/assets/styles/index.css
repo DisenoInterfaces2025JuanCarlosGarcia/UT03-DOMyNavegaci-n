@@ -88,7 +88,7 @@ button:focus-visible {
     font-size: clamp(1.8rem, 5vw, 3.5rem);
     font-weight: var(--heading-h1-font-weight);
     text-shadow: #858383 4px 4px 4px;
-    color: var(--color-primary);
+    color: var(--color-black-1);
 }
 .text--h2{
     @extend .text-base;
@@ -188,4 +188,68 @@ button:focus-visible {
   .text--h1 {
     font-size: clamp(1.5rem, 6vw, 2.5rem); /* 🔹 título más pequeño */
   }
+}
+.boton {
+  display: inline-block;
+  margin-bottom: 1.5rem;   /* mb-6 */
+  padding: 0.5rem 1.5rem;  /* py-2 px-6 */
+  color: white;            /* text-white */
+  border-radius: 0.5rem;   /* rounded-lg */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  /* shadow */
+  background-color: var(--color-secondary);
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  opacity: 0.75;
+  box-shadow: 0 1px 3px rgba(0, 0, 0.5, 0.5) ;
+}
+.nav-header {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  position: relative;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo {
+  width: 45px;
+}
+
+.nav-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  text-align: center;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-item {
+  padding: 6px 18px;
+  border-radius: 8px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-text);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  background-color: var(--color-primary);
+  color: white;
 }
