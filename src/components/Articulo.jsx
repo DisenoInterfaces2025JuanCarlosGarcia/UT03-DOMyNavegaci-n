@@ -1,4 +1,15 @@
-
+/**
+ * Componente que representa un artículo/producto en el catálogo.
+ *
+ * @component
+ * @param {Object} props - Propiedades del componente.
+ * @param {string} props.nombre - Nombre del artículo.
+ * @param {number|string} props.precio - Precio del artículo.
+ * @param {string} props.descripcion - Descripción del artículo.
+ * @param {string} props.imagen - URL de la imagen del artículo.
+ * 
+ * @returns {JSX.Element} Elemento JSX que representa la tarjeta del artículo.
+ */
 
 function Articulo(props){
     const { nombre,precio,descripcion,imagen}=props

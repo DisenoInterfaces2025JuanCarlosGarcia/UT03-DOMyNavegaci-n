@@ -1,3 +1,11 @@
+/**
+ * Componente de navegación principal.
+ * Muestra el logo, el título de la empresa y un menú de navegación
+ * responsive que se adapta a pantallas grandes y móviles.
+ *
+ * @component
+ * @returns {JSX.Element} Barra de navegación con enlaces y botón hamburguesa.
+ */
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";

@@ -1,3 +1,11 @@
+/**
+ * Componente de la página de inicio.
+ * Muestra una imagen principal y un grid con algunos artículos destacados.
+ *
+ * @component
+ * @returns {JSX.Element} Elemento JSX que representa la página de inicio.
+ */
+
 import articulos from "../data/articulos";
 import Articulo from "../components/Articulo";
 import Contenedor from "../components/Contenedor";

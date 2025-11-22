@@ -1,3 +1,14 @@
+/**
+ * Componente que sirve como contenedor principal de páginas.
+ * Proporciona un layout base con un máximo ancho y centrado.
+ *
+ * @component
+ * @param {Object} props - Propiedades del componente.
+ * @param {React.ReactNode} props.children - Contenido que se renderiza dentro del contenedor.
+ * @param {string} [props.titulo] - Título opcional de la sección principal.
+ *
+ * @returns {JSX.Element} Elemento JSX que envuelve el contenido de la página.
+ */
 
 import { Outlet } from "react-router-dom";
 

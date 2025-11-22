@@ -1,3 +1,11 @@
+/**
+ * Componente que muestra el catálogo completo de artículos.
+ * Renderiza un título, subtítulo y un grid con todos los artículos disponibles.
+ *
+ * @component
+ * @returns {JSX.Element} Elemento JSX que representa la página de catálogo.
+ */
+
 import articulos from "../data/articulos";
 import Articulo from "../components/Articulo";
 import Contenedor from "../components/Contenedor";

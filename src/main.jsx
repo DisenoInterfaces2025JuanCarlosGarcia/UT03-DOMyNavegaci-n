@@ -1,3 +1,9 @@
+/**
+ * Punto de entrada de la aplicación React.
+ * Renderiza la aplicación dentro del root del HTML usando React 18.
+ * Incluye el router y un enlace accesible para saltar al contenido principal.
+ */
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from "react-router-dom"

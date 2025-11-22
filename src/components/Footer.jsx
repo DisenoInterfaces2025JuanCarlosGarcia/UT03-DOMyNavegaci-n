@@ -1,3 +1,11 @@
+/**
+ * Componente Footer de la página.
+ * Muestra el copyright y enlaces a redes sociales.
+ *
+ * @component
+ * @returns {JSX.Element} Elemento JSX del footer.
+ */
+
 function Footer() {
   return (
     <footer className="[background-color:rgb(248,240,217)] text-black py-6 mt-12 w-full text-center">

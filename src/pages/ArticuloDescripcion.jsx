@@ -1,3 +1,12 @@
+/**
+ * Componente que muestra la descripción completa de un artículo.
+ * Busca el artículo por ID desde los parámetros de la URL y lo renderiza.
+ * Si el artículo no existe, muestra un mensaje de error con enlace al catálogo.
+ *
+ * @component
+ * @returns {JSX.Element} Elemento JSX con la información del artículo o mensaje de error.
+ */
+
 import { useParams, Link } from "react-router-dom";
 import articulos from "../data/articulos";
 

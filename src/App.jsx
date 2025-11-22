@@ -1,3 +1,12 @@
+/**
+ * Componente principal de la aplicación.
+ * Configura las rutas de la aplicación usando react-router-dom
+ * y renderiza el header y footer comunes en todas las páginas.
+ *
+ * @component
+ * @returns {JSX.Element} Elemento JSX con la estructura principal de la app.
+ */
+
 import { Route, Routes } from "react-router-dom"
 import articulos from "./data/articulos.js"
 import Articulo from "./components/Articulo"
