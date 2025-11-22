@@ -1,7 +1,7 @@
 import articulos from "../data/articulos";
 import Articulo from "../components/Articulo";
 import Contenedor from "../components/Contenedor";
-import './index.css'
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -12,14 +12,15 @@ function App() {
          <h2 className="text--h2" id="main-section-title">Listado de articulos disponibles</h2>
         
         <div className="grid--contenedor">
-        {articulos.map((item, index) => (
-          <Articulo
-            key={index}
-            nombre={item.nombre}
-            precio={item.precio}
-            descripcion={item.descripcion}
-            imagen={item.imagen}
-          />
+        {articulos.map((item) => (
+           <Link to={`/articulo/${item.id}`} key={item.id}>
+            <Articulo
+              nombre={item.nombre}
+              precio={item.precio}
+              descripcion={item.descripcion}
+              imagen={item.imagen}
+            />
+          </Link>
         ))}
         </div>
       </Contenedor>

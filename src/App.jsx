@@ -1,7 +1,15 @@
-import articulos from "./data/articulos";
-import Articulo from "./components/Articulo";
-import Contenedor from "./components/Contenedor";
-import './index.css'
+import { Route, Routes } from "react-router-dom"
+import articulos from "./data/articulos.js"
+import Articulo from "./components/Articulo"
+import Contenedor from "./components/Contenedor"
+import './assets/styles/index.css'
+import Inicio from "./pages/inicio"
+import ArticuloDescripcion from "./pages/ArticuloDescripcion.jsx"
+import Home from "./pages/Home.jsx"
+import Catalogo from "./pages/Catalogo.jsx"
+import Header from "./components/Header.jsx"
+
+
 
 function App() {
   return (
@@ -11,15 +19,11 @@ function App() {
       <Routes>
         <Route element={<Contenedor />}>
           <Route path="/" element={<Home />} />
-          <Route path="/inicio" element={<Navigate to="/" />} />
-          <Route path="/peliculas" element={<Peliculas />} />
-          <Route path="/interpretes" element={<Interpretes />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/interpretes/:idPelicula/:index" element={<InterpreteDetalle />} />
-          <Route path="/peliculas/:id" element={<PeliculasDetalle />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/articulo/:id" element={<ArticuloDescripcion />} />
         </Route>
-
-
         <Route
         path="*"
         element={
