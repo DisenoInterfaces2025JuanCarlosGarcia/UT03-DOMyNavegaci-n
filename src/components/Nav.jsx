@@ -11,6 +11,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from '../assets/img/Logo.png';
 
+
 function Nav() {
 
     // Estado del menú: abierto o cerrado
@@ -52,6 +53,7 @@ function Nav() {
                             <NavLink to="/catalogo" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Catalogo</NavLink>
                             {/* <NavLink to="/articuloDescripcion" onClick={() => setOpen(false)} className="px-3 py-2 rounded hover:bg-gray-700 transition">ArticuloDescripcion</NavLink> */}
                             <NavLink to="/home" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Home</NavLink>
+                            <NavLink to="/admin" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Admin</NavLink>
                         </div>
                     </nav>
 

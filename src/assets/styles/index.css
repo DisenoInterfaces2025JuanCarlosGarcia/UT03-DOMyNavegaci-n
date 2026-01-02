@@ -82,7 +82,11 @@ button:focus-visible {
 
 
 .text--h1{
-   @extend .text-base;
+    font-family: var(--heading-h1-font-family);
+    font-style: var(--heading-h1-font-style);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    text-align: center;
     margin-top: 45px;
     margin-bottom: 5px;
     font-size: clamp(1.8rem, 5vw, 3.5rem);
@@ -91,19 +95,31 @@ button:focus-visible {
     color: var(--color-black-1);
 }
 .text--h2{
-    @extend .text-base;
+    font-family: var(--heading-h1-font-family);
+    font-style: var(--heading-h1-font-style);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    text-align: center;
     font-size: clamp(1.2rem, 3vw, 2rem);
     color: var(--color-secondary);
 }
 
 .text--h3{
-    @extend .text-base;
+    font-family: var(--heading-h1-font-family);
+    font-style: var(--heading-h1-font-style);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    text-align: center;
     font-size: clamp(1.2rem, 3vw, 1.7rem);
     color: var(--color-black-1);
     margin-bottom: 5%
 }
 .text--h4{
-    @extend .text-base;
+    font-family: var(--heading-h1-font-family);
+    font-style: var(--heading-h1-font-style);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    text-align: center;
     font-size: clamp(1.2rem, 3vw, 1rem);
     color: var(--color-black-2);
     margin-top: 15%
@@ -111,7 +127,11 @@ button:focus-visible {
 
 
 .font--heading--h1{
-    @extend .text-base;
+    font-family: var(--heading-h1-font-family);
+    font-style: var(--heading-h1-font-style);
+    letter-spacing: var(--heading-h1-letter-spacing);
+    line-height: var(--heading-h1-line-height);
+    text-align: center;
 }
 .leading{
     line-height: var(--heading-h1-line-height);

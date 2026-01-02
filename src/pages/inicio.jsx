@@ -6,7 +6,6 @@
  * @returns {JSX.Element} Elemento JSX que representa la página de inicio.
  */
 
-import articulos from "../data/articulos";
 import Articulo from "../components/Articulo";
 import Contenedor from "../components/Contenedor";
 import { Link } from "react-router-dom";
